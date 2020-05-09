@@ -190,3 +190,66 @@ header .ml1 .letter .color {
   background-color: #fff;
   transform-origin: 0 0;
 } */
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  .banner {
+    padding: 150px 50px 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .banner:before {
+    width: 300px;
+    transform: skew(-25deg) translate(50%);
+  }
+
+  .banner .textBox {
+    /* position: relative; */
+    max-width: 100%;
+  }
+
+  .banner .imgBox {
+    position: relative;
+    /* height: 100vh; */
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    align-items: center;
+    /* width: 50%; */
+    z-index: 2;
+    flex-direction: column;
+    right: initial;
+    right: -20px;
+    overflow: hidden;
+  }
+
+  .banner .imgBox img {
+    /* position: relative; */
+
+    display: block;
+    height: auto;
+    max-width: 100%;
+    z-index: 2;
+    flex-direction: column;
+    right: -10px;
+    right: initial;
+    right: -10px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .sci {
+    z-index: 1000;
+    left: initial;
+    right: 20px;
+    flex-direction: column;
+  }
+
+  .sci li:hover a {
+    transform: translateX(-10px);
+  }
+}
